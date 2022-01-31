@@ -7,3 +7,4 @@ COPY server-default.conf /etc/nginx/conf.d/default.conf
 COPY src /usr/share/nginx/html/
 
 COPY 40-generate-templates.sh /docker-entrypoint.d/
+RUN chmod +x /docker-entrypoint.d/40-generate-templates.sh
